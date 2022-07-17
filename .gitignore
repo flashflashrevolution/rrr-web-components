@@ -8,6 +8,7 @@
 .parcel-cache
 .pnp.*
 /dist/
+/temp/
 /node_modules/
 /web/scripts/
 yarn-error.log
