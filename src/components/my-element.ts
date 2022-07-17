@@ -13,7 +13,7 @@ export class MyElement extends LitElement
   render(): TemplateResult
   {
     return html`
-      <div class="text-3xl text-slate-900 capitalize font-thin hover:uppercase hover:underline hover:font-black">Hello from MyElement!</div>
+      <div class="text-3xl text-slate-900 capitalize font-thin hover:text-green-300 hover:uppercase hover:underline hover:font-black">Hello from MyElement!</div>
     `;
   }
 }

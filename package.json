@@ -23,7 +23,8 @@
   },
   "scripts": {
     "watch": "yarn postcss src --base src --dir temp --watch",
-    "serve": "parcel serve ./web/index.html --dist-dir dist"
+    "serve": "parcel serve ./web/index.html --dist-dir dist",
+    "dev": "yarn watch & yarn serve"
   },
   "dependencies": {
     "lit": "^2.2.7"
