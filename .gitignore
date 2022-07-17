@@ -1,0 +1,13 @@
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.parcel-cache
+.pnp.*
+/dist/
+/node_modules/
+/web/scripts/
+yarn-error.log
