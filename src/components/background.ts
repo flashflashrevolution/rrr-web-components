@@ -5,6 +5,8 @@ import { customElement } from "lit/decorators.js";
 @customElement('x-background-element')
 export class BackgroundElement extends LitElement
 {
+    static shadowRootOptions = { ...LitElement.shadowRootOptions, mode: 'closed' as const };
+
     static styles = css`
         :host {
             --color-bg-start: #1495BD;

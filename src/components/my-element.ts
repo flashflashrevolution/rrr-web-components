@@ -5,6 +5,8 @@ import { customElement } from "lit/decorators.js";
 @customElement('x-my-element')
 export class MyElement extends LitElement
 {
+  static shadowRootOptions = { ...LitElement.shadowRootOptions, mode: 'closed' as const };
+
   static override styles = css`
     @tailwind base;
     @tailwind utilities;
