@@ -60,3 +60,11 @@ export class BackgroundElement extends LitElement
         `;
     }
 }
+
+declare global
+{
+    interface HTMLElementTagNameMap
+    {
+        'x-background-element': BackgroundElement;
+    }
+}
