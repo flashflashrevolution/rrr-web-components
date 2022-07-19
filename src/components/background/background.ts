@@ -1,35 +1,14 @@
 import type { TemplateResult } from "lit";
 import { html, LitElement, css } from "lit";
 import { customElement } from "lit/decorators.js";
+import styles from "./background.styles";
 
 @customElement('x-background-element')
 export class BackgroundElement extends LitElement
 {
+    static styles = styles;
+
     static shadowRootOptions = { ...LitElement.shadowRootOptions, mode: 'closed' as const };
-
-    static styles = css`
-        :host {
-            --color-bg-start: #1495BD;
-            --color-bg-end: red;
-            --color-bg-lines: #0332421f;
-        }
-
-        .bg {
-            overflow: hidden;
-            position: relative;
-            height: 1024px;
-            width: 768px;
-        }
-
-        .fade {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            -webkit-mask: linear-gradient(transparent, #fff);
-            mask: linear-gradient(transparent, #fff);
-        }
-    `;
 
     protected render(): TemplateResult
     {
