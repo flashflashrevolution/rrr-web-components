@@ -26,9 +26,12 @@
   },
   "scripts": {
     "clean": "rimraf dist temp",
-    "postcss": "postcss src --base src --dir temp --watch",
-    "serve": "parcel serve ./web/index.html --dist-dir dist",
-    "dev": "run-p -s --print-label postcss serve"
+    "dev:postcss": "postcss src --base src --dir temp --watch --verbose",
+    "dev:parcel": "parcel serve ./web/index.html --dist-dir dist",
+    "dev": "run-p --print-label \"dev:**\"",
+    "build:postcss": "postcss src --base src --dir temp --verbose",
+    "build:parcel": "parcel build ./web/index.html --dist-dir dist",
+    "build": "run-s --print-label clean \"build:**\""
   },
   "dependencies": {
     "lit": "^2.2.8"
