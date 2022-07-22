@@ -9,7 +9,24 @@ module.exports = {
   },
   darkMode: "media",
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern':
+          "url('https://www.flashflashrevolution.com/images/2008/background-arrows.png')",
+      },
+      maxWidth: {
+        rrr: '1024px',
+      },
+      maxHeight: {
+        rrr: '640px',
+      },
+      minHeight: {
+        rrr: '640px',
+      },
+      minWidth: {
+        rrr: '1024px',
+      },
+    },
   },
   variants: {},
   plugins: [],

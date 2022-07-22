@@ -1212,10 +1212,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/glob@npm:*":
+  version: 7.2.0
+  resolution: "@types/glob@npm:7.2.0"
+  dependencies:
+    "@types/minimatch": "npm:*"
+    "@types/node": "npm:*"
+  checksum: 28f927f9e0d7f5cecafc843e0c97f79fd3afe5874d71f35ad9343352fe14fd4d6e4136cc07688e46680d1972561751fdf4468762c7de5ac32f8cf902cd1f230f
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 8e5c6dd393411418e3d803ab0a09862b4ed47f73e7ed990f3b907dd41cc4d2f2b4f7aed9a39c7fd2acaa80314ac1397a5e2e5e6c25a338f01bbfba708cc70d8e
+  languageName: node
+  linkType: hard
+
+"@types/minimatch@npm:*":
+  version: 3.0.5
+  resolution: "@types/minimatch@npm:3.0.5"
+  checksum: 1e3ad77c3a101452cb52919d33e5f47f13b4fe66a6566409e1b555b975831cf127fb9ee347d6d9d1648784dac816dc955f8766991de9c3de80a80cc15890c5f1
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:*":
+  version: 18.0.6
+  resolution: "@types/node@npm:18.0.6"
+  checksum: 93c725b99e31b855e6a363dd26ebd99d83815f2f2e4b84cb24a492c69c437c812b216759d4715da7171c76c87b5c32e18dda81de00fa6122a9d0dfdaee128300
   languageName: node
   linkType: hard
 
@@ -1230,6 +1254,16 @@ __metadata:
   version: 2.6.3
   resolution: "@types/prettier@npm:2.6.3"
   checksum: 8a25ff9ebd6e2d2614cc351894c332b01d306ddb7363e0b1fa56ae5ff5b5639ae58905e213608dff311ef987d6834f532c92964860272e4fc3e95b4824d76e58
+  languageName: node
+  linkType: hard
+
+"@types/rimraf@npm:^3":
+  version: 3.0.2
+  resolution: "@types/rimraf@npm:3.0.2"
+  dependencies:
+    "@types/glob": "npm:*"
+    "@types/node": "npm:*"
+  checksum: 2c9fdc69d30a25921a390a0e0cc9f1d576158ec5cced569e580ee48c1bdd099f8c067dacd649534a8f7daa5fb772efaa7fd9299799cd5891c01ecc31441e332d
   languageName: node
   linkType: hard
 
@@ -4097,6 +4131,7 @@ __metadata:
     "@parcel/transformer-webmanifest": "npm:^2.6.2"
     "@types/eslint": "npm:^8.4.5"
     "@types/prettier": "npm:^2.6.3"
+    "@types/rimraf": "npm:^3"
     eslint: "npm:^8.20.0"
     lit: "npm:^2.2.8"
     npm-run-all: "npm:^4.1.5"
@@ -4105,6 +4140,7 @@ __metadata:
     postcss-cli: "npm:^10.0.0"
     postcss-lit: "npm:^0.4.3"
     prettier: "npm:^2.7.1"
+    rimraf: "npm:^3.0.2"
     tailwindcss: "npm:^3.1.6"
     tslib: "npm:^2.4.0"
     typescript: "npm:^4.7.4"
