@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "inlineSources": true,
+    "lib": ["esnext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmitOnError": true,
-    "lib": ["esnext", "dom"],
-    "strict": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
     "outDir": "./dist/",
+    "rootDir": "./src/",
     "sourceMap": true,
-    "inlineSources": true,
-    "rootDir": "./src/"
+    "strict": true,
+    "target": "esnext"
   },
   "include": ["./src/**/*.ts"]
 }

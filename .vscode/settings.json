@@ -1,8 +1,7 @@
 {
-  "[html][javascript][json][typescript][markdown][josnc]": {
+  "[html][javascript][json][jsonc][typescript][markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "eslint.nodePath": ".yarn/sdks",
   "files.exclude": {
