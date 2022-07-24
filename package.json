@@ -1,11 +1,22 @@
 {
   "name": "rrr-web-components",
   "version": "1.0.0",
-  "repository": "git@github.com:flashflashrevolution/rrr-web-components.git",
-  "author": "Zageron <hello@zageron.ca>",
-  "license": "MIT",
   "private": true,
-  "packageManager": "yarn@4.0.0-rc.13",
+  "repository": "git@github.com:flashflashrevolution/rrr-web-components.git",
+  "license": "MIT",
+  "author": "Zageron <hello@zageron.ca>",
+  "scripts": {
+    "clean": "rimraf dist temp",
+    "dev:postcss": "postcss src --base src --dir temp --watch --verbose",
+    "dev:parcel": "parcel serve ./web/index.html --dist-dir dist",
+    "dev": "run-p --print-label \"dev:**\"",
+    "build:postcss": "postcss src --base src --dir temp --verbose",
+    "build:parcel": "parcel build ./web/index.html --dist-dir dist",
+    "build": "run-s --print-label clean \"build:**\""
+  },
+  "dependencies": {
+    "lit": "^2.2.8"
+  },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.2",
     "@parcel/transformer-webmanifest": "^2.6.2",
@@ -24,16 +35,5 @@
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
-  "scripts": {
-    "clean": "rimraf dist temp",
-    "dev:postcss": "postcss src --base src --dir temp --watch --verbose",
-    "dev:parcel": "parcel serve ./web/index.html --dist-dir dist",
-    "dev": "run-p --print-label \"dev:**\"",
-    "build:postcss": "postcss src --base src --dir temp --verbose",
-    "build:parcel": "parcel build ./web/index.html --dist-dir dist",
-    "build": "run-s --print-label clean \"build:**\""
-  },
-  "dependencies": {
-    "lit": "^2.2.8"
-  }
+  "packageManager": "yarn@4.0.0-rc.13"
 }

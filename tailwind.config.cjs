@@ -1,13 +1,14 @@
+const { tailwindTransform } = require('postcss-lit')
+
 /** @type {import('tailwindcss').Config} */
-const { tailwindTransform } = require('postcss-lit');
 module.exports = {
   content: {
-    files: ["./src/**/*.ts"],
+    files: ['./src/**/*.ts'],
     transform: {
-      ts: tailwindTransform
-    }
+      ts: tailwindTransform,
+    },
   },
-  darkMode: "media",
+  darkMode: 'media',
   theme: {
     extend: {
       backgroundImage: {
@@ -28,6 +29,4 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [],
-};
+}

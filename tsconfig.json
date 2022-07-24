@@ -4,10 +4,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "noEmitOnError": true,
-    "lib": [
-      "esnext",
-      "dom",
-    ],
+    "lib": ["esnext", "dom"],
     "strict": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -18,7 +15,5 @@
     "inlineSources": true,
     "rootDir": "./src/"
   },
-  "include": [
-    "./src/**/*.ts",
-  ]
+  "include": ["./src/**/*.ts"]
 }

@@ -1,7 +1,9 @@
 {
   "recommendations": [
-    "runem.lit-plugin",
+    "arcanis.vscode-zipfs",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "arcanis.vscode-zipfs"
+    "runem.lit-plugin"
   ]
 }

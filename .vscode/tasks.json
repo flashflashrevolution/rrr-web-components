@@ -1,18 +1,16 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "npm",
-			"script": "dev",
-			"problemMatcher": [
-				"$tsc-watch"
-			],
-			"label": "npm: dev",
-			"detail": "run-p -s --print-label postcss serve",
-			"isBackground": true,
-			"runOptions": {
-				"runOn": "folderOpen"
-			}
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": ["$tsc-watch"],
+      "label": "npm: dev",
+      "detail": "run-p -s --print-label postcss serve",
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
 }
