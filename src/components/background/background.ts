@@ -11,11 +11,10 @@ export class BackgroundElement extends TwLitElement {
 
   protected render(): TemplateResult {
     return html`
-      <div class="relative w-[768px] h-[1024px]">
-        <div class="fade overflow-hidden absolute w-full h-full">
+      <div class="absolute w-full h-full">
+        <div class="fade absolute overflow-hidden w-full h-full">
           <svg
-            width="100%"
-            height="100%"
+            class="w-full h-full"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -39,12 +38,11 @@ export class BackgroundElement extends TwLitElement {
                 />
               </pattern>
             </defs>
-            <rect x="0" y="0" width="100%" height="100%" fill="url(#line)" />
+            <rect width="100%" height="100%" fill="url(#line)" />
           </svg>
         </div>
         <svg
-          width="100%"
-          height="100%"
+          class="w-full h-full"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -54,15 +52,7 @@ export class BackgroundElement extends TwLitElement {
               <stop offset="100%" stop-color="var(--color-bg-end)" />
             </linearGradient>
           </defs>
-          <rect
-            x="0"
-            y="0"
-            rx="0"
-            ry="0"
-            width="100%"
-            height="100%"
-            fill="url(#bg-gradient)"
-          />
+          <rect width="100%" height="100%" fill="url(#bg-gradient)" />
         </svg>
       </div>
     `
