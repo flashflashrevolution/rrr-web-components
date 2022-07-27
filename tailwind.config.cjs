@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const { tailwindTransform } = require('postcss-lit')
 
 /** @type {import('tailwindcss').Config} */

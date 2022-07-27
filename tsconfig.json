@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": false,
     "experimentalDecorators": true,
-    "importHelpers": true,
-    "inlineSources": true,
-    "lib": ["esnext", "dom"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "outDir": "./dist/",
-    "rootDir": "./src/",
-    "sourceMap": true,
-    "strict": true,
-    "target": "esnext"
+    "lib": ["DOM"],
+    "noEmit": true,
+
+    "checkJs": true,
+    "strict": true
   },
-  "include": ["./src/**/*.ts"]
+  "files": [".eslintrc.cjs"],
+  "include": ["*.cjs", "*.ts", "src/**/*"]
 }

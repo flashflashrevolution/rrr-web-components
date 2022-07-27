@@ -1,17 +1,12 @@
 {
-  "[html][javascript][json][jsonc][typescript][markdown]": {
+  "[html][javascript][json][jsonc][markdown][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "eslint.nodePath": ".yarn/sdks",
-  "files.exclude": {
-    ".pnp*": true
-  },
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "eslint.packageManager": "yarn",
   "search.exclude": {
     "**/.pnp.*": true,
     "**/.yarn": true
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": ".yarn/sdks/typescript/lib"
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
