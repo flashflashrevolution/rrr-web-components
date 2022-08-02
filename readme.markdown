@@ -20,6 +20,12 @@ Note:
 > For future development ease, close the `npm: dev` terminal window
 > and press "Allow" on the pop-up asking about autoloading.
 
+
+### Adding a new Component
+
+1. When adding a new component the `npm: dev` workflow breaks down temporarily.
+To resolve, just reload the window or restart the task.
+
 ---
 
 ## License
