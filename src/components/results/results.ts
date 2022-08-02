@@ -5,7 +5,7 @@ import { customElement } from 'lit/decorators.js'
 import { TwLitElement } from '../../../dist/components/tw-lit-element'
 
 /*
- * https://play.tailwindcss.com/gPKxLd59sP
+ * https://play.tailwindcss.com/NR4ScfiIjA
  */
 @customElement('x-results-element')
 export class ResultsElement extends TwLitElement {
@@ -98,7 +98,36 @@ export class ResultsElement extends TwLitElement {
           <div>Mods and Game Settings</div>
         </div>
         <div class="relative flex flex-1 bg-slate-600">Judgement Graph</div>
-        <div class="relative flex flex-1 bg-slate-700">Menu</div>
+        <div class="relative flex h-14 bg-slate-700">
+          <div
+            class="relative flex flex-1 items-center justify-around bg-black/20"
+          >
+            <button
+              type="button"
+              class="h-4/6 w-40 border-2 bg-sky-900 font-semibold text-white"
+            >
+              Options
+            </button>
+            <button
+              type="button"
+              class="h-4/6 w-40 border-2 bg-sky-900 font-semibold text-white"
+            >
+              Highscores
+            </button>
+            <button
+              type="button"
+              class="h-4/6 w-40 border-2 bg-sky-900 font-semibold text-white"
+            >
+              Replay Song
+            </button>
+            <button
+              type="button"
+              class="h-4/6 w-40 border-2 bg-sky-900 font-semibold text-white"
+            >
+              Exit to Menu
+            </button>
+          </div>
+        </div>
       </div>
     `
   }
