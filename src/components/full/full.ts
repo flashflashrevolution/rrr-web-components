@@ -4,6 +4,9 @@ import { customElement } from 'lit/decorators.js'
 
 import { TwLitElement } from '../tw-lit-element'
 
+/*
+ * https://play.tailwindcss.com/4QzPp7gmEZ
+ */
 @customElement('x-full-element')
 export class FullElement extends TwLitElement {
   protected render(): HTMLTemplateResult {
