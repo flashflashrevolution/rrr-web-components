@@ -5,7 +5,7 @@ import { customElement } from 'lit/decorators.js'
 import { TwLitElement } from '../../../dist/components/tw-lit-element'
 
 /*
- * https://play.tailwindcss.com/NR4ScfiIjA
+ * https://play.tailwindcss.com/ymLfz1NZfo
  */
 @customElement('x-results-element')
 export class ResultsElement extends TwLitElement {
@@ -16,44 +16,65 @@ export class ResultsElement extends TwLitElement {
       >
         <div class="relative flex h-14 flex-row justify-between bg-slate-400">
           <div class="flex flex-row items-center">
-            <div>results for zageron</div>
-            <div>play random song</div>
-            <div>save replay</div>
-            <div>take screenshot</div>
+            <div>&nbsp;Results for [Lv.89] Zageron:&nbsp;</div>
           </div>
-          <div class="flex items-center"><div>current timestamp</div></div>
+          <button
+            type="button"
+            class="text-grey h-4/6 w-40 border-2 bg-slate-500 font-semibold"
+          >
+            Play Random Song
+          </button>
+          <button
+            type="button"
+            class="text-grey h-4/6 w-40 border-2 bg-slate-500 font-semibold"
+          >
+            Save Replay
+          </button>
+          <button
+            type="button"
+            class="text-grey h-4/6 w-40 border-2 bg-slate-500 font-semibold"
+          >
+            Take Screenshot
+          </button>
+          <div class="items-center, flex bg-slate-500">
+            <div class="flex flex-row items-center">2022/08/02 05:27:39 PM</div>
+          </div>
         </div>
         <div class="relative flex flex-1 flex-col bg-slate-200">
           <div class="flex flex-col items-center">
             <div>Name of song</div>
-            <div>difficulty, length, artist, chartist</div>
+            <div>
+              Difficulty: 0 - Length: 0 - Artist:
+              <span class="underline underline-offset-2">Egg</span> -
+              Stepauthor: <span class="underline underline-offset-2">Greg</span>
+            </div>
           </div>
           <div class="relative flex flex-1 flex-row bg-slate-500">
             <div
               class="relative flex flex-col items-end justify-center bg-yellow-400 p-4"
             >
               <div class="flex flex-row items-end">
-                <div>Amazing</div>
+                <div>Amazing:&nbsp;</div>
                 <div class="text-xl">0</div>
               </div>
               <div class="flex flex-row items-end">
-                <div>Perfect</div>
+                <div>Perfect:&nbsp;</div>
                 <div class="text-xl">0</div>
               </div>
               <div class="flex flex-row items-end">
-                <div>Good</div>
+                <div>Good:&nbsp;</div>
                 <div class="text-xl">0</div>
               </div>
               <div class="flex flex-row items-end">
-                <div>Average</div>
+                <div>Average:&nbsp;</div>
                 <div class="text-xl">0</div>
               </div>
               <div class="flex flex-row items-end">
-                <div>Miss</div>
+                <div>Miss:&nbsp;</div>
                 <div class="text-xl">0</div>
               </div>
               <div class="flex flex-row items-end">
-                <div>Boo</div>
+                <div>Boo:&nbsp;</div>
                 <div class="text-xl">0</div>
               </div>
             </div>
@@ -62,31 +83,27 @@ export class ResultsElement extends TwLitElement {
                 class="relative flex flex-1 flex-col items-center justify-center bg-yellow-600"
               >
                 <div class="flex flex-row items-end">
-                  <div>Amazing</div>
+                  <div>AAA Equivalency:&nbsp;</div>
+                  <div class="text-xl">0.00</div>
+                </div>
+                <div class="flex flex-row items-end">
+                  <div>Raw Goods:&nbsp;</div>
+                  <div class="text-xl">0.0</div>
+                </div>
+                <div class="flex flex-row items-end">
+                  <div>Score:&nbsp;</div>
                   <div class="text-xl">0</div>
                 </div>
                 <div class="flex flex-row items-end">
-                  <div>AAA Equivalency:</div>
+                  <div>Grandtotal:&nbsp;</div>
                   <div class="text-xl">0</div>
                 </div>
                 <div class="flex flex-row items-end">
-                  <div>Raw Goods:</div>
+                  <div>Max Combo:&nbsp;</div>
                   <div class="text-xl">0</div>
                 </div>
                 <div class="flex flex-row items-end">
-                  <div>Score:</div>
-                  <div class="text-xl">0</div>
-                </div>
-                <div class="flex flex-row items-end">
-                  <div>Grandtotal:</div>
-                  <div class="text-xl">0</div>
-                </div>
-                <div class="flex flex-row items-end">
-                  <div>Max Combo:</div>
-                  <div class="text-xl">0</div>
-                </div>
-                <div class="flex flex-row items-end">
-                  <div>Credits:</div>
+                  <div>Credits:&nbsp;</div>
                   <div class="text-xl">0</div>
                 </div>
               </div>
