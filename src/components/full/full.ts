@@ -1,3 +1,5 @@
+import '../background/background'
+
 import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
@@ -15,7 +17,7 @@ export default class Full extends TwLitElement {
         class="select-none relative mx-auto flex max-h-rrr min-h-rrr min-w-rrr max-w-rrr gap-x-2 font-sans"
       >
         <slot class="absolute flex h-full w-full z-0" name="background">
-          Error: Background should appear here.
+          <x-background></x-background>
         </slot>
         <div class="ml-2 flex w-1/6 flex-col z-10">
           <img src="https://i.imgur.com/cdoNl19.png" alt="FFR Logo" />
