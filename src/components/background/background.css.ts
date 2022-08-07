@@ -8,7 +8,6 @@ export default css`
   }
 
   .fade {
-    -webkit-mask: linear-gradient(transparent, #fff);
     mask: linear-gradient(transparent, #fff);
   }
 `
