@@ -3,8 +3,11 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   overrides: [
     {
-      customSyntax: '@stylelint/postcss-css-in-js',
+      customSyntax: 'postcss-lit',
       files: '**/*.css.ts',
     },
   ],
+  rules: {
+    'at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }],
+  },
 }

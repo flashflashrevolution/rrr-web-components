@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
+    "checkJs": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "lib": ["DOM"],
     "noEmit": true,
-    "checkJs": true,
     "strict": true
   },
-  "files": [".eslintrc.cjs"],
-  "include": ["*.cjs", "*.ts", "src/**/*"]
+  "include": ["**/*", ".*.*"],
+  "exclude": ["dist/", "storybook-static/"]
 }

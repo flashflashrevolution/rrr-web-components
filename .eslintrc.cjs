@@ -1,5 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
+  plugins: ['simple-import-sort'],
   extends: [
     'eslint:recommended',
     'plugin:eslint-comments/recommended',
@@ -7,6 +8,8 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:lit/recommended',
     'plugin:lit-a11y/recommended',
+    'plugin:storybook/recommended',
+    'plugin:storybook/csf-strict',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:unicorn/recommended',
@@ -26,4 +29,10 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'storybook/csf-component': 'off',
+    'storybook/no-title-property-in-meta': 'off',
+  },
 }

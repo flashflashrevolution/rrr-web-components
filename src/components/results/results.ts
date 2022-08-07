@@ -2,7 +2,7 @@ import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
-import { TwLitElement } from '../../../dist/components/tw-lit-element'
+import { TwLitElement } from '../tw-lit-element'
 
 /*
  * https://play.tailwindcss.com/ymLfz1NZfo
