@@ -2,13 +2,13 @@ import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
-import { TwLitElement } from '../tw-lit-element'
+import TwLitElement from '../tw-lit-element'
 
 /*
  * https://play.tailwindcss.com/ymLfz1NZfo
  */
-@customElement('x-results-element')
-export class ResultsElement extends TwLitElement {
+@customElement('x-results')
+export default class Results extends TwLitElement {
   protected render(): HTMLTemplateResult {
     return html`
       <div
@@ -152,6 +152,6 @@ export class ResultsElement extends TwLitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'x-results-element': ResultsElement
+    'x-results': Results
   }
 }

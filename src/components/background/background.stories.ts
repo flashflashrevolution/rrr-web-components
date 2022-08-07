@@ -6,5 +6,5 @@ import { html } from 'lit'
 export default { title: 'Background' } as Meta
 
 export const Default: Story = {
-  render: () => html`<x-background-element></x-background-element>`,
+  render: () => html`<x-background></x-background>`,
 }

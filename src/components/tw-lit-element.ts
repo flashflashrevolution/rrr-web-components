@@ -1,7 +1,7 @@
 import type { CSSResultGroup } from 'lit'
-import { LitElement, css } from 'lit'
+import { css, LitElement } from 'lit'
 
-export class TwLitElement extends LitElement {
+export default class TwLitElement extends LitElement {
   public static shadowRootOptions: ShadowRootInit = {
     ...LitElement.shadowRootOptions,
     mode: 'closed',

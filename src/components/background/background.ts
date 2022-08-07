@@ -2,11 +2,11 @@ import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
-import { TwLitElement } from '../tw-lit-element'
+import TwLitElement from '../tw-lit-element'
 import styles from './background.css'
 
-@customElement('x-background-element')
-export class BackgroundElement extends TwLitElement {
+@customElement('x-background')
+export default class Background extends TwLitElement {
   public static styles = [TwLitElement.styles, styles]
 
   protected render(): HTMLTemplateResult {
@@ -50,6 +50,6 @@ export class BackgroundElement extends TwLitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'x-background-element': BackgroundElement
+    'x-background': Background
   }
 }

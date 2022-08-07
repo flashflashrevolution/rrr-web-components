@@ -1,4 +1,4 @@
-export { BackgroundElement } from './components/background/background'
-export { FullElement } from './components/full/full'
-export { PlayElement } from './components/play/play'
-export { ResultsElement } from './components/results/results'
+export { default as Background } from './components/background/background'
+export { default as Full } from './components/full/full'
+export { default as Play } from './components/play/play'
+export { default as Results } from './components/results/results'

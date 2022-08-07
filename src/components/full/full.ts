@@ -2,13 +2,13 @@ import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
-import { TwLitElement } from '../tw-lit-element'
+import TwLitElement from '../tw-lit-element'
 
 /*
  * https://play.tailwindcss.com/4QzPp7gmEZ
  */
-@customElement('x-full-element')
-export class FullElement extends TwLitElement {
+@customElement('x-full')
+export default class Full extends TwLitElement {
   protected render(): HTMLTemplateResult {
     return html`
       <div
@@ -442,6 +442,6 @@ export class FullElement extends TwLitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'x-full-element': FullElement
+    'x-full': Full
   }
 }

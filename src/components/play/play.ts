@@ -2,13 +2,13 @@ import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
-import { TwLitElement } from '../tw-lit-element'
+import TwLitElement from '../tw-lit-element'
 
 /*
  * https://play.tailwindcss.com/eMFiu2ebhi
  */
-@customElement('x-play-element')
-export class PlayElement extends TwLitElement {
+@customElement('x-play')
+export default class Play extends TwLitElement {
   protected render(): HTMLTemplateResult {
     return html`
       <div
@@ -75,6 +75,6 @@ export class PlayElement extends TwLitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'x-play-element': PlayElement
+    'x-play': Play
   }
 }
