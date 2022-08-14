@@ -5,6 +5,6 @@ import { html } from 'lit'
 
 export default { title: 'Background' } as Meta
 
-export const Default: Story = {
+export const Background: Story = {
   render: () => html`<x-background></x-background>`,
 }
