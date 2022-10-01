@@ -11,5 +11,6 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "task.allowAutomaticTasks": "on"
 }
