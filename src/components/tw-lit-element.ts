@@ -4,7 +4,7 @@ import { css, LitElement } from 'lit'
 export default class TwLitElement extends LitElement {
   public static shadowRootOptions: ShadowRootInit = {
     ...LitElement.shadowRootOptions,
-    mode: 'closed',
+    mode: 'open',
   }
 
   public static styles: CSSResultGroup = css`

@@ -1601,10 +1601,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ffr/rrr-head-wasm@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "@ffr/rrr-head-wasm@npm:0.1.2"
-  checksum: 59e40d5657a6be4a155db034940ba17ea9bf747985e641e6dbce4694a56fa00e11e56143ff5b27acc7b48bd847ff0d9211b08c8337e09ad4e81b4c045f3987f5
+"@ffr/rrr-head-wasm@file:../rrr/crates/head-wasm/pkg::locator=rrr-web-components%40workspace%3A.":
+  version: 0.1.6
+  resolution: "@ffr/rrr-head-wasm@file:../rrr/crates/head-wasm/pkg#../rrr/crates/head-wasm/pkg::hash=b9b885&locator=rrr-web-components%40workspace%3A."
+  checksum: beb1953031a9ea65304b324a4983a9c9ec012826c2511a54d30a7f7db3cb0fefe842d321b4ce5b90ce64ab49e1f8e197a0daed8f719a3469545cfbd931fa4fbb
   languageName: node
   linkType: hard
 
@@ -14584,7 +14584,7 @@ __metadata:
     "@babel/plugin-proposal-export-default-from": "npm:^7.18.10"
     "@babel/preset-env": "npm:^7.19.3"
     "@babel/preset-typescript": "npm:^7.18.6"
-    "@ffr/rrr-head-wasm": "npm:^0.1.2"
+    "@ffr/rrr-head-wasm": "file:../rrr/crates/head-wasm/pkg"
     "@mdx-js/react": "npm:^1.6.22"
     "@storybook/addon-a11y": "npm:^6.5.12"
     "@storybook/addon-actions": "npm:^6.5.12"

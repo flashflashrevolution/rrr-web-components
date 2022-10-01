@@ -23,9 +23,7 @@ const config: StorybookConfig = {
   webpackFinal: async (config, { configType }) => {
     // Make whatever fine-grained changes you need
     // Return the altered config
-    config.experiments!.asyncWebAssembly = true
-    config.experiments!.syncWebAssembly = true
-    config.experiments!.topLevelAwait = true
+    config.experiments!.futureDefaults = true
     return config
   },
 }

@@ -24,7 +24,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ffr/rrr-head-wasm": "^0.1.2",
+    "@ffr/rrr-head-wasm": "file:../rrr/crates/head-wasm/pkg",
     "lit": "^2.3.1"
   },
   "devDependencies": {

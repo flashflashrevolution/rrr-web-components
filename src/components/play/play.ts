@@ -15,11 +15,11 @@ export default class Play extends TwLitElement {
 
   canvas: HTMLCanvasElement | undefined
 
-  public async connectedCallback() {
-    super.connectedCallback()
+  createRenderRoot() {
+    return this
   }
 
-  firstUpdated() {
+  async firstUpdated() {
     var engine = new rrr.Engine()
     this.canvas = this.renderRoot!.querySelector('#rrr') as
       | HTMLCanvasElement
