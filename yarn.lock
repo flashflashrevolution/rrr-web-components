@@ -1601,6 +1601,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ffr/rrr-head-wasm@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@ffr/rrr-head-wasm@npm:0.1.2"
+  checksum: 59e40d5657a6be4a155db034940ba17ea9bf747985e641e6dbce4694a56fa00e11e56143ff5b27acc7b48bd847ff0d9211b08c8337e09ad4e81b4c045f3987f5
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1, @gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -3132,6 +3139,173 @@ __metadata:
     start-storybook: bin/index.js
     storybook-server: bin/index.js
   checksum: 1f5bb558e0da12fd764ce457c1545be5ebfad087a1286858bca8e90e45e6739f8aa8a1809b23e580a0d2216b6fb1bc8a1f948f092dc7bcc02d9b0bbe8694dee0
+  languageName: node
+  linkType: hard
+
+"@swc/core-android-arm-eabi@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-android-arm-eabi@npm:1.3.4"
+  dependencies:
+    "@swc/wasm": "npm:1.2.122"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/core-android-arm64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-android-arm64@npm:1.3.4"
+  dependencies:
+    "@swc/wasm": "npm:1.2.130"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-arm64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-darwin-arm64@npm:1.3.4"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-darwin-x64@npm:1.3.4"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-freebsd-x64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-freebsd-x64@npm:1.3.4"
+  dependencies:
+    "@swc/wasm": "npm:1.2.130"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm-gnueabihf@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.4"
+  dependencies:
+    "@swc/wasm": "npm:1.2.130"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.4"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-musl@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.4"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-gnu@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.4"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.4"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-arm64-msvc@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.4"
+  dependencies:
+    "@swc/wasm": "npm:1.2.130"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-ia32-msvc@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.4"
+  dependencies:
+    "@swc/wasm": "npm:1.2.130"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.4"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.2.147":
+  version: 1.3.4
+  resolution: "@swc/core@npm:1.3.4"
+  dependencies:
+    "@swc/core-android-arm-eabi": "npm:1.3.4"
+    "@swc/core-android-arm64": "npm:1.3.4"
+    "@swc/core-darwin-arm64": "npm:1.3.4"
+    "@swc/core-darwin-x64": "npm:1.3.4"
+    "@swc/core-freebsd-x64": "npm:1.3.4"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.3.4"
+    "@swc/core-linux-arm64-gnu": "npm:1.3.4"
+    "@swc/core-linux-arm64-musl": "npm:1.3.4"
+    "@swc/core-linux-x64-gnu": "npm:1.3.4"
+    "@swc/core-linux-x64-musl": "npm:1.3.4"
+    "@swc/core-win32-arm64-msvc": "npm:1.3.4"
+    "@swc/core-win32-ia32-msvc": "npm:1.3.4"
+    "@swc/core-win32-x64-msvc": "npm:1.3.4"
+  dependenciesMeta:
+    "@swc/core-android-arm-eabi":
+      optional: true
+    "@swc/core-android-arm64":
+      optional: true
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-freebsd-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  bin:
+    swcx: run_swcx.js
+  checksum: 14d9c0f885c19cbac3e58148f22623e96c0255be2175433e99f7ca2ed94df2b2477afd5f9d076dc026795d0b6065558814fd09bfffc75f39603cecacc916225c
+  languageName: node
+  linkType: hard
+
+"@swc/wasm@npm:1.2.122":
+  version: 1.2.122
+  resolution: "@swc/wasm@npm:1.2.122"
+  checksum: 9c9896e62921925d469d9a7ec01331f2e11c452d56b080a1dd0b4569dcd69a5ba244b0a21c5688b71dfd3de780a1cbb3b204144026954fa55a4c451a29e2b18a
+  languageName: node
+  linkType: hard
+
+"@swc/wasm@npm:1.2.130":
+  version: 1.2.130
+  resolution: "@swc/wasm@npm:1.2.130"
+  checksum: ff270fbb0a77d1e697a98209f180cea0c85c6c6e91df20361d8318d9d13749a0f2c23d0a20e78079e7d721ce7e203e91f2fff62f614d1635a73c5fb0f2ad897e
   languageName: node
   linkType: hard
 
@@ -14410,6 +14584,7 @@ __metadata:
     "@babel/plugin-proposal-export-default-from": "npm:^7.18.10"
     "@babel/preset-env": "npm:^7.19.3"
     "@babel/preset-typescript": "npm:^7.18.6"
+    "@ffr/rrr-head-wasm": "npm:^0.1.2"
     "@mdx-js/react": "npm:^1.6.22"
     "@storybook/addon-a11y": "npm:^6.5.12"
     "@storybook/addon-actions": "npm:^6.5.12"
@@ -14463,6 +14638,8 @@ __metadata:
     typescript: "npm:^4.8.4"
     vite: "npm:^3.1.4"
     vite-plugin-checker: "npm:^0.5.1"
+    vite-plugin-top-level-await: "npm:^1.1.1"
+    vite-plugin-wasm: "npm:^3.0.0"
     webpack: "npm:^5.74.0"
   languageName: unknown
   linkType: soft
@@ -16727,7 +16904,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.1.4":
+"vite-plugin-top-level-await@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "vite-plugin-top-level-await@npm:1.1.1"
+  dependencies:
+    "@swc/core": "npm:^1.2.147"
+  peerDependencies:
+    vite: ">=2.8"
+  checksum: b968465c3dfafb1b953d1de37fcbe471ee7ce54e6e3815cd72b2d4858f6fe5674029b424f45ed8826ea2afa635b7a77a903f438e418900b13c37a6e271fe2297
+  languageName: node
+  linkType: hard
+
+"vite-plugin-wasm@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "vite-plugin-wasm@npm:3.0.0"
+  dependencies:
+    vite: "npm:^3"
+  checksum: 7c8ac7e4b2024ba4842d359756a877081cb41e7e35b79f8afdd94b33c94b13ce28ce5ebd83c1208896a0f8c541f6dd78e8ad39d88704a18df76eb57503487f2f
+  languageName: node
+  linkType: hard
+
+"vite@npm:^3, vite@npm:^3.1.4":
   version: 3.1.4
   resolution: "vite@npm:3.1.4"
   dependencies:

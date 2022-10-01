@@ -1,6 +1,12 @@
 import { defineConfig } from 'vite'
 import { checker } from 'vite-plugin-checker'
+import wasm from 'vite-plugin-wasm'
+import topLevelAwait from 'vite-plugin-top-level-await'
 
 export default defineConfig({
-  plugins: [checker({ typescript: true })],
+  plugins: [wasm(), topLevelAwait(), checker({ typescript: true })],
+  preview: { cors: true },
+  optimizeDeps: {
+    exclude: ['@syntect/wasm'],
+  },
 })

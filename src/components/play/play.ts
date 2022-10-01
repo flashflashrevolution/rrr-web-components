@@ -1,6 +1,7 @@
 import type { HTMLTemplateResult } from 'lit'
 import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
+import * as rrr from '@ffr/rrr-head-wasm'
 
 import TwLitElement from '../tw-lit-element'
 import styles from './play.css'
@@ -11,6 +12,25 @@ import styles from './play.css'
 @customElement('x-play')
 export default class Play extends TwLitElement {
   public static styles = [TwLitElement.styles, styles]
+
+  canvas: HTMLCanvasElement | undefined
+
+  public async connectedCallback() {
+    super.connectedCallback()
+  }
+
+  firstUpdated() {
+    var engine = new rrr.Engine()
+    this.canvas = this.renderRoot!.querySelector('#rrr') as
+      | HTMLCanvasElement
+      | undefined
+
+    if (this.canvas != null) {
+      console.log(this.canvas)
+
+      rrr.play(this.canvas, this.canvas.width, this.canvas.height)
+    }
+  }
 
   protected render(): HTMLTemplateResult {
     return html`
@@ -49,7 +69,7 @@ export default class Play extends TwLitElement {
           </ul>
         </aside>
         <main class="grid-area-notefield flex justify-center items-center">
-          Judgement
+          <canvas id="rrr" width="512" height="720"></canvas>
         </main>
         <aside class="grid-area-hp flex items-center">
           <span class="bg-blue-500 border-4 w-12 h-4/5"></span>

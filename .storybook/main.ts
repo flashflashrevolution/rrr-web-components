@@ -20,6 +20,14 @@ const config: StorybookConfig = {
     previewMdx2: true,
     storyStoreV7: true,
   },
+  webpackFinal: async (config, { configType }) => {
+    // Make whatever fine-grained changes you need
+    // Return the altered config
+    config.experiments!.asyncWebAssembly = true
+    config.experiments!.syncWebAssembly = true
+    config.experiments!.topLevelAwait = true
+    return config
+  },
 }
 
 export default config
