@@ -3,71 +3,68 @@ import { html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
 import TwLitElement from '../tw-lit-element'
+import styles from './play.css'
 
 /*
  * https://play.tailwindcss.com/eMFiu2ebhi
  */
 @customElement('x-play')
 export default class Play extends TwLitElement {
+  public static styles = [TwLitElement.styles, styles]
+
   protected render(): HTMLTemplateResult {
     return html`
       <div
-        class="max-h-rrr min-h-rrr min-w-rrr max-w-rrr relative mx-auto flex flex-col bg-black"
+        class="grid grid-template-play grid-cols-[minmax(200px,1fr),minmax(400px,3fr),minmax(200px,1fr)] grid-rows-[1fr,10fr,1fr] bg-black text-white font-sans overflow-auto"
       >
-        <div class="flex h-12 flex-row justify-around bg-slate-400">
-          <div>progress bar</div>
-          <div>timer</div>
-        </div>
-        <div class="relative flex flex-1 flex-row">
-          <div
-            class="relative flex w-1/6 flex-col items-end justify-center bg-yellow-400 p-4"
-          >
-            <div class="flex flex-row items-end">
-              <div>Amazing</div>
-              <div class="text-5xl">0</div>
-            </div>
-            <div class="flex flex-row items-end">
-              <div>Perfect</div>
-              <div class="text-5xl">0</div>
-            </div>
-            <div class="flex flex-row items-end">
-              <div>Good</div>
-              <div class="text-5xl">0</div>
-            </div>
-            <div class="flex flex-row items-end">
-              <div>Average</div>
-              <div class="text-5xl">0</div>
-            </div>
-            <div class="flex flex-row items-end">
-              <div>Miss</div>
-              <div class="text-5xl">0</div>
-            </div>
-            <div class="flex flex-row items-end">
-              <div>Boo</div>
-              <div class="text-5xl">0</div>
-            </div>
-          </div>
-          <div
-            class="relative flex flex-1 items-center justify-center text-cyan-400"
-          >
-            <div class="relative h-10 justify-around bg-purple-400 text-center">
-              Judgement
-            </div>
-          </div>
-          <div class="relative flex w-1/6 justify-end bg-yellow-500 p-4">
-            <div class="m-2 w-12 border-4">HP</div>
-          </div>
-        </div>
-        <div
-          class="relative flex h-14 w-full items-center justify-center bg-red-400"
-        >
-          <div>0 combo</div>
-          <div class="relative -bottom-3 w-2/6 text-center">0</div>
-          <div>total 0</div>
-          <div
-            class="absolute h-[92%] w-[96%] border-2 bg-black/20 text-center"
-          ></div>
-        </div>
+        <header class="grid-area-progress flex justify-center items-center">
+          progress bar
+        </header>
+        <aside class="grid-area-judgements flex flex-col justify-center">
+          <ul class="flex flex-col items-end">
+            <li class="text-green-300">
+              Amazing
+              <span class="text-5xl">0</span>
+            </li>
+            <li class="text-green-500">
+              Perfect
+              <span class="text-5xl">0</span>
+            </li>
+            <li class="text-green-700">
+              Good
+              <span class="text-5xl">0</span>
+            </li>
+            <li class="text-orange-400">
+              Average
+              <span class="text-5xl">0</span>
+            </li>
+            <li class="text-red-500">
+              Miss
+              <span class="text-5xl">0</span>
+            </li>
+            <li class="text-amber-800">
+              Boo
+              <span class="text-5xl">0</span>
+            </li>
+          </ul>
+        </aside>
+        <main class="grid-area-notefield flex justify-center items-center">
+          Judgement
+        </main>
+        <aside class="grid-area-hp flex items-center">
+          <span class="bg-blue-500 border-4 w-12 h-4/5"></span>
+        </aside>
+        <footer class="grid-area-stats flex pb-2">
+          <span class="flex flex-1 justify-end items-end">
+            <span class="text-5xl">0</span>
+            combo
+          </span>
+          <span class="flex flex-1 justify-center text-5xl">0</span>
+          <span class="flex flex-1 items-end">
+            total
+            <span class="text-5xl">0</span>
+          </span>
+        </footer>
       </div>
     `
   }
