@@ -15,6 +15,10 @@ export default class Play extends TwLitElement {
 
   canvas: HTMLCanvasElement | undefined
 
+  createRenderRoot() {
+    return this
+  }
+
   async firstUpdated() {
     var engine = new rrr.Engine()
     this.canvas = this.renderRoot!.querySelector('#rrr') as
